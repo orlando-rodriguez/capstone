@@ -30,7 +30,7 @@
 /* //logo// */
 
 .ui.menu .item>img:not(.ui) {
-  width: 4.5em;
+  width: 7.5em;
 }
 
 .copyright {
@@ -40,4 +40,8 @@
   left: 0;
   bottom: 0;
   padding-top: 2px;
+}
+
+.ui.blue.card {
+  width: 100%;
 }

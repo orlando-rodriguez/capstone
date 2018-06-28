@@ -1,6 +1,6 @@
 import React from 'react';
 import {Grid, Image, Card, Icon} from 'semantic-ui-react'
-
+import ArticleCard from './ArticleCard'
 
 class Main extends React.Component {
   render() {
@@ -9,20 +9,8 @@ class Main extends React.Component {
         <Grid.Row>
           <Grid.Column>
           </Grid.Column>
-          <Grid.Column width={8}>
-            <Card>
-              <Card.Content>
-                <Card.Header textAlign={'center'}>Article Title</Card.Header>
-                <Card.Meta>
-                  <p className='date' Align={'center'}>June 26, 2018</p>
-                </Card.Meta>
-                <Card.Description textAlign={'center'}>Article Tagline</Card.Description>
-              </Card.Content>
-              <Image src='./white.jpg' />
-              <Card.Content extra>
-                <a><Icon name='user' />Read More</a>
-              </Card.Content>
-            </Card>
+          <Grid.Column>
+            <ArticleCard />
           </Grid.Column>
           <Grid.Column>
           </Grid.Column>
@@ -31,8 +19,8 @@ class Main extends React.Component {
         <Grid.Row>
           <Grid.Column>
           </Grid.Column>
-          <Grid.Column width={8}>
-            <Card>
+          <Grid.Column>
+            <Card color='blue'>
               <Card.Content>
                 <Card.Header textAlign={'center'}>Product Name</Card.Header>
                 <Card.Meta>

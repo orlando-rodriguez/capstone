@@ -16,20 +16,20 @@ class Header extends React.Component {
         </Menu.Item>
 
         <Menu.Item
-          name='features'
-          active={activeItem === 'features'}
+          name='articles'
+          active={activeItem === 'articles'}
           onClick={this.handleItemClick}
           position='right'
         >
-          Features
+          Articles
         </Menu.Item>
 
         <Menu.Item
-          name='testimonials'
-          active={activeItem === 'testimonials'}
+          name='products'
+          active={activeItem === 'products'}
           onClick={this.handleItemClick}
         >
-          Testimonials
+          Products
         </Menu.Item>
 
 
