@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "development": "craftydudestorefront",
+    "default": "craftydudestorefront"
+  }
+}
