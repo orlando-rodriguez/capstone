@@ -1,41 +1,34 @@
 import React from 'react'
 import {Card, Image, Icon} from 'semantic-ui-react'
-let dataURL = 'https://craftydude.herokuapp.com/'
-
+import ProductCard from './ProductCard'
+import ModalButton from './Modal'
 
 class ArticleCard extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      articles: []
-    }
-  }
 
-  componentDidMount() {
-    const getArticles = () => {
-      fetch(dataURL)
-      .then(response => response.json())
-      .then(articles => {this.setState({articles})
-        })
-    }
+  render() {
 
-  }
 
-  render(){
+
     return (
-      <Card href='' color='blue'>
-        <Card.Content>
-          <Card.Header textAlign={'center'}>Article Title</Card.Header>
-          <Card.Meta>
-            <p className='date' Align={'center'}>June 26, 2018</p>
-          </Card.Meta>
-          <Card.Description textAlign={'center'}>Article Tagline</Card.Description>
-        </Card.Content>
-        <Image src='./white.jpg' />
-        <Card.Content extra>
-          <a><Icon name='user' />Read More</a>
-        </Card.Content>
-      </Card>
+
+          <Card color='blue'>
+            <Card.Content>
+              <Card.Header textAlign={'center'}>{this.props.article[0] && this.props.article[0].title}</Card.Header>
+              <Card.Meta>
+                <p className='date' Align={'center'}>{this.props.article[0] && this.props.article[0].datePublished}</p>
+              </Card.Meta>
+              <Card.Description textAlign={'center'}>Featured Ingredient/Use</Card.Description>
+            </Card.Content>
+            <Image src='./blueberries.jpg' />
+            <Card.Content extra>
+              <a><Icon name='book' />Read Now</a>
+              <ModalButton articleInfo={this.props.article} />
+            </Card.Content>
+          </Card>
+
+
+
+
     )
   }
 }

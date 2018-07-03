@@ -1,11 +1,25 @@
 import React from 'react';
+import Header from './Header'
+import Footer from './Footer'
 
 
-const Article = (props) => {
-  return (
-    <header>
-    <img src='./g-dino.png' alt="logo" />
-  </header>)
+class Article extends React.Component => {
+
+
+
+  render() {
+
+    return (
+
+    )
+  }
+
 }
 
 export default Article
+
+const ArticlePage = ({article}) => (
+
+  <Modal />
+
+)

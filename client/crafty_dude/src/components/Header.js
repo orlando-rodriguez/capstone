@@ -4,9 +4,16 @@ import { Menu } from 'semantic-ui-react';
 class Header extends React.Component {
   state = {}
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  handleItemClick = ((e, { name }) => {
+    this.setState({
+      activeItem: name
+    })
+    this.props.clickedArticles()
+  })
 
   render() {
+
+    console.log(this.props);
     const { activeItem } = this.state
 
     return (
