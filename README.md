@@ -50,10 +50,6 @@ For local hosting run: npm run dev
 
 * **Orlando Rodriguez** - *Initial work* - [CraftyDude](https://github.com/orlando-rodriguez)
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
 ## Acknowledgments
 
 * Thanks to the folks at Galvanize for the support during the initial build of this project!
